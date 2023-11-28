@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Under Construction</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@500&display=swap" rel="stylesheet">
+    <style>
+        /* Global Reset */
+        * {
+            box-sizing: border-box;
+        }
+
+        a {
+            text-decoration: none;
+            display: block;
+            /* border: 4px solid lime; */
+            color: white;
+            font-size: 1rem;
+        }
+
+        /* End Global Reset */
+
+        body {
+            margin: 0;
+        }
+
+        nav {
+            /* border: 4px solid red; */
+            position: absolute;
+            top: 0;
+            right: 0;
+            display: flex;
+            width: 100%;
+            justify-content: flex-end;
+            gap: 12px; 
+        }
+
+        main {
+            min-height: 100vh; 
+            position: relative;
+            min-height: 100vh;
+            /* border: 5px solid red; */
+            flex-grow: 1;
+            background-image: url('https://picsum.photos/id/48/1024/800');
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .text { 
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+
+        h1 { 
+            padding: 10px;
+            margin: 0;
+            color: white;
+            font-size: 3rem;
+            font-family: 'Open Sans', sans-serif;
+        }
+
+        .progress_bar {
+            position: relative;
+            /* border: 4px solid red; */
+            margin-bottom: 48px;
+        }
+
+        label {
+            color: white;
+            display: block;
+            width: 100%;
+            text-align: center;
+            /* border: 4px solid lime; */
+        }
+
+        progress {
+            width: 370px;
+        }
+
+        .start {
+            color: white;
+            position: absolute;
+            top: 35px;
+            left: 0px;
+        }
+
+        .end {
+            color: white;
+            position: absolute;
+            top: 35px;
+            left: 330px;
+        }
+
+        .myButton {
+            box-shadow: inset 0px 1px 0px 0px #fce2c1;
+            background: linear-gradient(to bottom, #ffc477 5%, #fb9e25 100%);
+            background-color: #ffc477;
+            border-radius: 42px;
+            border: 1px solid #eeb44f;
+            display: inline-block;
+            cursor: pointer;
+            color: #ffffff;
+            font-family: Arial;
+            font-size: 15px;
+            font-weight: bold;
+            padding: 6px 24px;
+            text-decoration: none;
+            text-shadow: 0px 1px 0px #cc9f52;
+        }
+
+        .myButton:hover {
+            background: linear-gradient(to bottom, #fb9e25 5%, #ffc477 100%);
+            background-color: #fb9e25;
+        }
+
+        .myButton:active {
+            position: relative;
+            top: 1px;
+        }
+
+        .button {
+            margin-bottom: 24px;
+        }
+
+        .social {
+            /* border: 4px solid red; */
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            gap: 12px;
+        }
+
+        img {
+            display: block;
+        }
+
+        footer {
+            position: absolute;
+            bottom: 0;
+            /* border: 4px solid red; */
+            color: white;
+            text-align: center;
+            width: 80%;
+        }
+    </style>
+</head>
+
+<body>
+    <main>
+            <nav>
+                <a href="#">Home&nbsp;&nbsp;&nbsp;|</a>
+                <a href="#">Products&nbsp;&nbsp;&nbsp;|</a>
+                <a href="#">Learn&nbsp;&nbsp;&nbsp;|</a>
+                <a href="#">Safety&nbsp;&nbsp;&nbsp;|</a>
+                <a href="#">Support&nbsp;&nbsp;&nbsp;|</a>
+                <a href="#">Download&nbsp;&nbsp;&nbsp;</a>
+            </nav>
+
+            <div class="text">
+                <h1>UNDER</h1>
+                <h1>CONSTRUCTION</h1>
+            </div>
+
+            <div class="progress_bar">
+                <label for="site">SITE NEARLY READY</label>
+                <progress id="site" value="80" max="100"> 80% </progress>
+                <div class="start">0%</div>
+                <div class="end">100%</div>
+            </div>
+
+            <div class="button">
+                <button class="myButton">Notify Me!</button>
+            </div> 
+
+            <div class="social">
+                <a href="https://www.facebook.com/">
+                    <img style="width: 30px;" src="./pics/facebook-svgrepo-com.svg" alt="">
+                </a>
+                <a href="https://twitter.com/?lang=en">
+                    <img style="width: 30px;" src="./pics/twitter-color-svgrepo-com.svg" alt="">
+                </a>
+                <a href="https://www.linkedin.com/?original_referer=https%3A%2F%2Fwww.google.com%2F">
+                    <img style="width: 30px;" src="./pics/linkedin-color-svgrepo-com.svg" alt="">
+                </a>
+                <a href="https://mail.google.com/mail/">
+                    <img style="width: 30px;" src="./pics/gmail-old-svgrepo-com.svg" alt="">
+                </a>
+            </div>
+
+            <footer>
+                <hr>
+                &copy; 2023 by Under Construction.
+            </footer>
+    </main>
+</body>
+
+</html>
